@@ -4,6 +4,6 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v3
-      - run: Write-Host 'meh'
+      - uses: actions/checkout@v3
+      - run: ./Invoke-Build.ps1 ?
         shell: pwsh
