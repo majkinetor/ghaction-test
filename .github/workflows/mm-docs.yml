@@ -13,13 +13,17 @@ jobs:
       - name: Upload Artifact - PDF
         uses: actions/upload-artifact@v2
         with:
-            name: pdf
-            path: ./source/pdf/docs.pdf
+          name: pdf
+          path: ./source/pdf/docs.pdf
       - name: Upload Artifact - Site
         uses: actions/upload-artifact@v2
         with:
-            name: site
-            path: ./source/site
+          name: site
+          path: ./source/site
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.6.0
+        with:
+          build_dir: ./source/site
     env:
       VERSION: '1.2.3'
       MM_DOCS_URL_PREFIX: http://localhost:8000
