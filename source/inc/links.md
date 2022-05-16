@@ -1,1 +1,1 @@
-[download]: {{url_prefix}}/download
+[download]: download

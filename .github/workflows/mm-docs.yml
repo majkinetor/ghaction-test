@@ -25,5 +25,4 @@ jobs:
         with:
           build_dir: ./source/site
     env:
-      MM_DOCS_URL_PREFIX: ""
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
