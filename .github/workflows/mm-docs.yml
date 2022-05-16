@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: ./Invoke-Build.ps1 Build
-      - run: Write-Host "${VERSION}"
+      - run: ./Invoke-Build.ps1 Run, ExportPdf, Stop
     env:
       VERSION: '1.2.3'
       MM_DOCS_URL_PREFIX: 'http://localhost:8000'
