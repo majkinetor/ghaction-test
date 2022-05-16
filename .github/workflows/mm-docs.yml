@@ -26,4 +26,4 @@ jobs:
           build_dir: ./source/site
     env:
       MM_DOCS_URL_PREFIX: docs
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
