@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: ./Invoke-Build.ps1 Build
-      - run: "Version:" $Env:VERSION
+      - run: Write-Host "${VERSION}"
     env:
       VERSION: '1.2.3'
