@@ -25,5 +25,4 @@ jobs:
         with:
           build_dir: ./source/site
     env:
-      VERSION: '1.2.3'
-      MM_DOCS_URL_PREFIX: http://localhost:8000
+      MM_DOCS_URL_PREFIX: docs
