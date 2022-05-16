@@ -6,6 +6,8 @@ The documentation is created using the mm-docs docker bundle:
 
 - https://github.com/majkinetor/mm-docs
 
+[Download] page.
+
 ## Features
 
 - Write documentation in extended Markdown, HTML, PlantUML and other markup languages
