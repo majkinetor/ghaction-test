@@ -4,5 +4,6 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: docker -v
+      # - uses: actions/checkout@v3
+      - run: Write-Host 'meh'
+        shell: pwsh
