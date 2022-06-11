@@ -15,7 +15,7 @@ param (
     [switch] $aNoProxy,
 
     # Top level section to publish judged by the folder name
-    [ValidateSet("", "full", "user", 'tech', 'funspec', 'admin')]
+    [ValidateSet("", "full")]
     [string] $aSection = ""
 )
 
@@ -51,7 +51,6 @@ task Run Stop, GitRevisionDates, {
 
 # Synopsis: Build documentation into static site
 task Build GitRevisionDates, {
-    Write-Host '$Env:MM_DOCS_URL_PREFIX:' $Env:MM_DOCS_URL_PREFIX
     $ContainerName = "$ContainerName-build"
     docker-run mkdocs build $ConfigParam
 }

@@ -1,10 +1,10 @@
-﻿site_name: MM-DOCS
-site_description: MM-DOCS Template
-site_author: majkinetor
-copyright: © majkinetor 2019
+﻿site_name: 1Remote
+site_description: One Remote Access Manager to Rule Them All
+site_author: 1Remote Team
+copyright: © 1Remote Team 2022
 
-repo_url: https://github.com/majkinetor/mm-docs-template
-edit_uri: edit/master/source/docs
+repo_url: https://github.com/1Remote/docs
+edit_uri: edit/main
 
 dev_addr: 0.0.0.0:8000
 
@@ -40,10 +40,8 @@ extra_javascript:
 
 extra:
     url_prefix: !ENV MM_DOCS_URL_PREFIX
-    version: 0.1
-    # date format: '%d.%m.%Y %H:%M'
-    company:
-        name: Acme
+    name: 1Remote
+    shortname: 1RM
     social:
     - icon: dummy value to show social override
 
@@ -119,7 +117,7 @@ plugins:
         add_cover_page: true
         cover_page_template: pdf/cover_page.tpl
         # Table of contents
-        add_table_of_contents: true
+        add_table_of_contents: false
         toc_title: Content
         toc_depth: 2
         # Content-related
@@ -131,8 +129,3 @@ plugins:
         exclude:
 nav:
 - Home: index.md
-- Demonstration: demo.md
-- Extra:
-    - Variables: vars.md
-    - Revision: revision.md
-- Download: download.md
